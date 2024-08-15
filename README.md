@@ -100,8 +100,7 @@ DATABASE_URL=postgres://user:password@host:port/db_name
   - OrderDetailView - модель детализации заказов
 
 #### Products
-management/commands
-  - create_periodic_task_for_daily_product.py - создание задачи по запуску продукта дня
+management/commands/create_periodic_task_for_daily_product.py - создание задачи по запуску продукта дня
 - admin.py
   - ProductAdmin - регистрация модели Product в административной панели
   - ProductItemTabularInline - детализация сущности в административной панели
