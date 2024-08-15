@@ -149,3 +149,28 @@ management/commands
     - add_to_comparison - добавление товара к сравнению
     - remove_from_comparison - удаление товара из сравнения
   - ComparisonView - отображение сравнения товаров
+#### Users
+- admin.py
+  - UserAdmin - регистрация модели User в административной панели
+  - ViewHistoryInline - детализация истории просмотров сущности в административной панели
+- apps.py
+  - UsersConfig - создание приложения users
+- forms.py
+  - MarketplaceSignupForm - форма регистрации на маркетплейсе
+  - MarketplaceLoginForm - форма логирования на маркетплейсе
+  - MarketplaceProfileForm - форма профиля пользователя
+  - MarketplaceResetPasswordForm - форма сброса пароля
+  - MarketplaceResetPasswordKeyForm - форма восстановления пароля
+- models.py
+  - UserManager - модель пользователя-админа
+  - User - модель обычного пользователя
+  - ViewHistory - модель просмотра истории пользователя
+- view.py
+  - EmailVerificationSuccessTemplateView - отображение страницы с email
+  - MarketplaceSignupView - отображение формы регистрации
+  - MarketplaceLoginView - отображение формы с логированием
+  - ResendEmailVerification - отображение с повторной отправкой письма
+  - MarketplaceProfileView - отображение страницы пользователя
+  - MarketplacePasswordResetView - отображение страницы со сбросом пароля
+  - MarketplacePasswordResetDoneView - отображение страницы с воссановленным паролем
+  
