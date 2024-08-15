@@ -62,6 +62,14 @@ DATABASE_URL=postgres://user:password@host:port/db_name
 ```
 
 ### Documentation
+#### Marketplace
+- __init_.py - запуск celery
+- celery.py - настройки celery касаемо marketplace
+- settings.py - общие настройки проекта
+- views.py
+  - handler_404 - обработчик ошибки 404
+  - handler_500 - обработчик ошибки 500
+  - IndexTemplateView - отображение главной страницы
 #### Orders
 - admin.py
   - OrderAdmin - регистрация модели Order в административной панели
