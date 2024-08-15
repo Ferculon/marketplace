@@ -75,6 +75,10 @@ DATABASE_URL=postgres://user:password@host:port/db_name
     - get_total_original_price - получение стоимости корзины на товары с ценами без скидки
     - get_cart_price_with_discount - получение стоимости корзины со скидкой на корзину
     - get_difference_original_price_and_discount_price - получение разницы оригинальной скидочной цены на товар
+- apps.py
+  - OrdersConfig - создание приложения orders
+- context_proccessors.py
+  - cart - все значения корзины в запросе
 - forms.py
   - OrderCreateForm - форма оформления заказа
 - models.py
@@ -86,4 +90,6 @@ DATABASE_URL=postgres://user:password@host:port/db_name
   - CartTemplateView - модель отображения страницы с корзиной
   - OrderCreateView - модель создания заказа
   - OrderDetailView - модель детализации заказов
+
+#### Products
 
