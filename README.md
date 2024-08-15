@@ -66,5 +66,24 @@ DATABASE_URL=postgres://user:password@host:port/db_name
 - admin.py
   - OrderAdmin - регистрация модели Order в административной панели
   - OrderItemInline - детализация сущности в административной панели
-
+- cart.py
+  - Cart - модель корзины для товаров
+    - add - добавление товара в корзину
+    - remove - удаление товара из корзины
+    - get_total_price - получение полной стоимости корзины
+    - get_total_discount_price - получение стоимости корзины со скидками на товары
+    - get_total_original_price - получение стоимости корзины на товары с ценами без скидки
+    - get_cart_price_with_discount - получение стоимости корзины со скидкой на корзину
+    - get_difference_original_price_and_discount_price - получение разницы оригинальной скидочной цены на товар
+- forms.py
+  - OrderCreateForm - форма оформления заказа
+- models.py
+  - Order - модель заказов
+  - OrderItem - модель деталей заказов
+- views.py
+  - cart_add - добавление товаров в корзину
+  - cart_remove - удаление товара из корзины
+  - CartTemplateView - модель отображения страницы с корзиной
+  - OrderCreateView - модель создания заказа
+  - OrderDetailView - модель детализации заказов
 
