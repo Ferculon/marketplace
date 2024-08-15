@@ -63,5 +63,8 @@ DATABASE_URL=postgres://user:password@host:port/db_name
 
 ### Documentation
 #### Orders
+- admin.py
+  - OrderAdmin - регистрация модели Order в административной панели
+  - OrderItemInline - детализация сущности в административной панели
 
 
