@@ -143,3 +143,9 @@ management/commands
     - add - добавление товара для сравнения
     - remove - удаление товара для сравнения
     - get_differing_characteristics - получение различий в характеристиках товаров
+- views.py
+  - ProductListView - отображение списка товаров
+  - ProductDetailView - отображение деталей товара
+    - add_to_comparison - добавление товара к сравнению
+    - remove_from_comparison - удаление товара из сравнения
+  - ComparisonView - отображение сравнения товаров
